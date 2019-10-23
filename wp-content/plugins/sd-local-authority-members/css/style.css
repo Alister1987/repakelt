@@ -1,0 +1,330 @@
+.member-list {
+    position: relative;
+    margin-top: 60px;
+}
+
+.member-list .member-list-filter {
+    min-width: 100px;
+    width: 20%;
+    margin-left: 10px;
+    height: 50px;
+    z-index: 10;
+    position: relative;
+}
+
+.member-list .dataTables_wrapper {
+    display: inline-table;
+}
+
+.member-list .dataTables_wrapper .dataTables_filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.member-list .dataTables_wrapper .dataTables_filter label {
+    position: relative;
+}
+
+.member-list .dataTables_wrapper .dataTables_filter .fa-search {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    font-size: 17px;
+    color: #C7C7CD;
+}
+
+.member-list .dataTables_wrapper .dataTables_filter input[type=search] {
+    padding-left: 10px;
+    height: 50px;
+    font-weight: normal;
+}
+
+.member-list select.member-list-filter option:first-child {
+    font-style: italic;
+}
+
+.member-list span.search-label {
+    line-height: 50px;
+}
+
+.member-list table.dataTable {
+    font-size: 13px;
+}
+
+.member-list table.dataTable thead tr th {
+    font-size: 12px;
+    white-space: nowrap;
+    border-bottom: 2px solid #000000;
+}
+
+.member-list table.dataTable.no-footer {
+    border-bottom: none;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.member-list table .even {
+    background-color: #e4e4e4;
+}
+
+.member-list .dataTables_wrapper #myTable_length {
+    display: none;
+}
+
+.member-list .dataTables_paginate.paging_simple_numbers {
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+
+.member-list .dataTables_wrapper {
+    position: static;
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+    min-width: 27px;
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border-radius: 50%;
+    border: 2px solid #e4e4e4;
+    background: #e4e4e4 !important;
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border-radius: 50%;
+    border: 2px solid #000000;
+    color: #ffffff !important;
+    background: #000000 !important;
+
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.previous {
+    padding-right: 20px;
+    color: #000000 !important;
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.next {
+    padding-left: 20px;
+    color: #000000 !important;
+}
+
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover,
+.member-list .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover {
+    background: none !important;
+    border: none !important;
+}
+
+.myTable_legend {
+    margin: 20px 0;
+}
+
+.myTable_legend p {
+    text-align: right;
+}
+
+/*
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    .member-list table.dataTable table,
+    .member-list table.dataTable thead,
+    .member-list table.dataTable tbody,
+    .member-list table.dataTable th,
+    .member-list table.dataTable td,
+    .member-list table.dataTable tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .member-list table.dataTable thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .member-list table.dataTable tr {
+        border: 1px solid #ccc;
+    }
+
+    .member-list table.dataTable td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        min-height: 25px;
+    }
+
+    .member-list table.dataTable td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before {
+        content: "Local Authority";
+    }
+
+    /*td:nth-of-type(2):before {
+        content: "Operator";
+    }*/
+
+    td:nth-of-type(2):before {
+        content: "Member No";
+    }
+
+	td:nth-of-type(3):before {
+        content: "Unique Id";
+    }
+	
+    td:nth-of-type(4):before {
+        content: "Registered Name";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Trading As";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Address 1";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Address 2";
+    }
+
+    td:nth-of-type(8):before {
+        content: "Address 3";
+    }
+
+    td:nth-of-type(9):before {
+        content: "Town";
+    }
+
+    td:nth-of-type(10):before {
+        content: "County";
+    }
+	
+	td:nth-of-type(11):before {
+        content: "Premises Type";
+    }
+	
+	td:nth-of-type(12):before {
+        content: "Member Status";
+    }
+
+    .member-list .dataTables_wrapper {
+        margin-left: 8px;
+        width: 100%;
+    }
+
+    .member-list .member-list-filter{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .member-list .dataTables_wrapper .dataTables_filter
+    {
+        position: absolute;
+        width: 100%;
+        top: 230px;
+    }
+    .member-list .dataTables_wrapper .dataTables_filter label,
+    .member-list .dataTables_wrapper .dataTables_filter input{
+        width: 100%;
+    }
+	
+	.member-list span.search-label {
+		margin-left: 10px;
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        /*width: 320px;*/
+    }
+
+    .member-list table.dataTable.no-footer {
+        margin-top: 80px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        /*width: 495px;*/
+    }
+}
+
+.member-list table.dataTable thead tr th.sorting_asc{
+    background-image: url(images/sort_asc.png);
+}
+
+.member-list table.dataTable thead tr th.sorting_desc{
+    background-image: url(images/sort_desc.png);
+}
+
+div.dt-buttons {
+    top: 55px;
+}
+
+div.dt-buttons:before {
+    content: 'Export: ';
+    left: -15px;
+    margin-left: 15px;
+    position: relative;
+    top: -14px;
+}
+
+div.dt-buttons .dt-button {
+    background-color: initial;
+    background-image: none;
+    border: none;
+    bottom: 3px;
+    color: #00b16b;
+    font-size: 1em;
+    margin: 0 5px 0 0;
+    padding: 5px;
+    position: relative;
+    transition: color .2s ease-in-out;
+}
+
+div.dt-buttons a.dt-button:focus,
+div.dt-buttons a.dt-button:hover,
+div.dt-buttons a.dt-button:active,
+div.dt-buttons  a.dt-button:active:not(.disabled):hover:not(.disabled) {
+    background-color: initial;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    color: #222;
+}
+
+@media screen and (max-width: 640px) {
+    div.dt-buttons {
+        top: 70px;
+    }
+}

@@ -1,0 +1,206 @@
+/* --------------------------------------------
+	Download Forms Popup
+-------------------------------------------- */
+
+#download-forms-popup{
+  height: 100px;
+  max-width: 400px;
+  font-size: 19px;
+  color: #fcfcfc;
+  text-align: center;
+  background-color: #F79F3F;
+  position: fixed;
+  right: 0;
+  top: 80%;
+  transform: translateY(-80%);
+  z-index: 100;
+  padding: 10px 20px;
+}
+
+#download-forms-popup a{
+  width: 85%;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+#download-forms-popup #download-forms-popup-msg{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  bottom: 12px;
+  text-transform: capitalize;
+}
+
+#download-forms-popup .sf-icon:before{
+  color: #fcfcfc;
+  font-size: 22px;
+  position: relative;
+  bottom: -2px;
+  padding: 0 10px;
+}
+
+#download-forms-popup #close-download-forms-popup{
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 19px !important;
+  position: relative;
+  top: 4px;
+}
+
+#download-forms-popup #close-download-forms-popup:hover{
+  opacity: 0.5;
+}
+
+#download-forms-popup #download-forms-popup-body-wrap{
+  display: inline-block;
+}
+
+#download-forms-popup-body-wrap a {
+  color: #fcfcfc;
+}
+
+.ss-delete:before, .ss-delete.right:after {
+  top: -20px;
+  right: -20px;
+  font-size: 20px !important;
+}
+
+#download-forms-popup-body-wrap .ss-download:before, .ss-download.right:after {
+  font-size: 30px !important;
+}
+
+#download-forms-popup .sf-button{
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 4px 40px;
+  background-color: transparent;
+  border: 1px solid #36363f;
+  border-radius: 0;
+  transition-property: none;
+}
+
+#download-forms-popup .sf-button:hover{
+  background-color: #36363f;
+  color: #fff !important;
+}
+
+/* --------------------------------------------
+	Download Forms Page
+-------------------------------------------- */
+
+.file-list-title p{
+  font-size: 16px !important;
+}
+
+/* --------------------------------------------
+	Roadshow Application Page
+-------------------------------------------- */
+
+.events-checkbox label{
+  position: relative;
+  bottom: 27px;
+}
+
+/* --------------------------------------------
+	Individual Form
+-------------------------------------------- */
+
+.download-forms-wrapper {
+  text-align: center;
+  font-size: 14px;
+}
+
+.download-form-link:hover{
+  opacity: 0.6 !important;
+}
+
+.download-forms-wrapper .form-title{
+  color: #000;
+  font-weight: bold;
+}
+
+.download-forms-wrapper .form-description{
+  margin-left: 10px;
+}
+
+.download-forms-wrapper .form-holder {
+  display: inline-block;
+}
+
+.download-forms-wrapper .form-holder .s-title {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.75em;
+  letter-spacing: .02em;
+  margin-bottom: 10px;
+  color: #36363f;
+  text-transform: none;
+}
+
+.download-forms-wrapper .form-holder .form-item {
+  display: inline-block;
+}
+
+.download-forms-wrapper .form-holder .form-item a {
+  position: absolute;
+  bottom: 50%;
+  right: 20px;
+}
+
+.download-forms-wrapper .form-holder p.main-body {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: .02em;
+  color: #36363f;
+}
+
+.download-forms-wrapper .download-form-link:hover {
+  text-decoration: none;
+}
+
+.form-item i.ss-download.sf-icon.sf-icon-medium {
+  font-size: 28px !important;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.form-item i.ss-download.sf-icon.sf-icon-medium:hover {
+  text-decoration: underline;
+}
+
+span.wpcf7-list-item-label br:last-child {
+  display: none;
+}
+
+/* --------------------------------------------
+	Mobile
+-------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  .download-forms-wrapper .form-title{
+    display: block;
+  }
+  .download-forms-wrapper .form-holder {
+    margin: 20px 0;
+  }
+  #download-forms-popup-body-wrap{
+    position: relative;
+    bottom: 6px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .form-item i.ss-download.sf-icon.sf-icon-medium {
+    display: none;
+  }
+  #download-forms-popup-body-wrap i.ss-signpost.sf-icon {
+    display: none;
+  }
+  #download-forms-popup-body-wrap{
+    position: relative;
+    bottom: -2px;
+  }
+}

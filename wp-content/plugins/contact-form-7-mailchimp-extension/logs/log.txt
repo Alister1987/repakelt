@@ -1,0 +1,9 @@
+
+##### Nothing here yet - Submit or Test your forms to start debugging
+##### (renzo.johnson@gmail.com)
+
+
+[10/23/2019 8:16 AM] - FAILURE : PHP Error - :4 Message :{"type":8,"message":"Constant DISALLOW_FILE_EDIT already defined","file":"\/home\/alexander\/Projects\/repakelt\/wp-config.php","line":65}
+[10/23/2019 8:16 AM] - FAILURE : PHP Error - :4 Message :{"type":8,"message":"Constant DISALLOW_FILE_EDIT already defined","file":"\/home\/alexander\/Projects\/repakelt\/wp-config.php","line":65}
+[10/23/2019 8:16 AM] - FAILURE : PHP Error - :4 Message :{"type":8,"message":"Constant DISALLOW_FILE_EDIT already defined","file":"\/home\/alexander\/Projects\/repakelt\/wp-config.php","line":65}
+[10/23/2019 8:16 AM] - FAILURE : PHP Error - :4 Message :{"type":8,"message":"Constant DISALLOW_FILE_EDIT already defined","file":"\/home\/alexander\/Projects\/repakelt\/wp-config.php","line":65}
