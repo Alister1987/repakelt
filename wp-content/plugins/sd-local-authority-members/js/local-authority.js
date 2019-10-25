@@ -21,7 +21,7 @@
             var $select = $("#sel-county");
     
             var collator = new Intl.Collator(undefined, {numeric: true, sensitivity: 'base'});
-    
+
             column.data().unique().sort(collator.compare).each(function (d, j) {
                 if (d) {
                     $select.append($('<option>', {
@@ -147,7 +147,8 @@
     
             loadOperators();
             loadCounties(dataTable);
-    
+            // console.log(loadCounties(dataTable));
+
             bindOperatorSearch(dataTable);
             bindCountySearch(dataTable);
     
@@ -156,6 +157,7 @@
     
         $('#myTable').on('draw.dt', function () {
             var $searchInput = $(".member-list .dataTables_wrapper .dataTables_filter input[type=search]");
+            // console.log($searchInput);
             $searchInput.attr("placeholder", "Search");
         });
     

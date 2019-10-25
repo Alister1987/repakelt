@@ -2,8 +2,8 @@
 # Database Configuration
 define('WP_HOME','http://repakelt.local');
 define('WP_SITEURL','http://repakelt.local');
-define( 'DB_NAME', 'repakelt' );
-define( 'DB_USER', 'root' );
+define( 'DB_NAME', 'repakelt.local' );
+define( 'DB_USER', 'ddi-dev' );
 define( 'DB_PASSWORD', 'ddipass' );
 define( 'DB_HOST', '127.0.0.1' );
 define( 'DB_HOST_SLAVE', '127.0.0.1' );

@@ -1,0 +1,29 @@
+'CREATE TABLE wp_SD_LocalAuthorityMembers (
+                                  LocalAuthority varchar(255) NOT NULL,
+                                  Operator varchar(255) DEFAULT \'\',
+                  MemberNumber mediumint(9) NOT NULL,
+                                  UniqueID mediumint(9) NOT NULL,
+                  RegisteredName varchar(255) NOT NULL,
+                  TradingAs varchar(255),
+                                  Address1 varchar(255),
+                                  Address2 varchar(255),
+                                  Address3 varchar(255),
+                                  Town varchar(255),
+                                  County varchar(255),
+                                  PremisesType varchar(255),
+                                  Status varchar(255)
+              ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;''CREATE TABLE wp_SD_LocalAuthorityMembers_sync (
+                                  LocalAuthority varchar(255) NOT NULL,
+                                  Operator varchar(255) DEFAULT \'\',
+                  MemberNumber mediumint(9) NOT NULL,
+                                  UniqueID mediumint(9) NOT NULL,
+                  RegisteredName varchar(255) NOT NULL,
+                  TradingAs varchar(255),
+                                  Address1 varchar(255),
+                                  Address2 varchar(255),
+                                  Address3 varchar(255),
+                                  Town varchar(255),
+                                  County varchar(255),
+                                  PremisesType varchar(255),
+                                  Status varchar(255)
+              ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;'
